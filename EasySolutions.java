@@ -40,6 +40,28 @@ class Solution {
         return sum;
     }
 }
+//1108. Defanging an IP Address
+class Solution {
+    public String defangIPaddr(String address) {
+        return address.replace(".","[.]");
+    }
+}
+
+//2011. Final Value of Variable After Performing Operations
+class Solution {
+    public int finalValueAfterOperations(String[] operations) {
+        int x = 0;
+        for(int i = 0; i<operations.length; i++){
+            if(operations[i].equals("X--") || operations[i].equals("--X")){
+                x--;
+            }
+            else{
+                x++;
+            }
+        }
+        return x;
+    }
+}
 
 
 
